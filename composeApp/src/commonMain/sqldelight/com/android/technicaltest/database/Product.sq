@@ -1,0 +1,56 @@
+import kotlin.Boolean;
+
+CREATE TABLE IF NOT EXISTS ProductEntity (
+    id INTEGER PRIMARY KEY NOT NULL,
+    title TEXT NOT NULL,
+    description TEXT,
+    userId TEXT NOT NULL,
+    createdAt TEXT NOT NULL,
+    updatedAt TEXT NOT NULL,
+    isSynced INTEGER AS Boolean NOT NULL DEFAULT 1,
+    lastSyncedAt TEXT
+);
+
+-- Queries
+getAllProducts:
+SELECT *
+FROM ProductEntity
+ORDER BY updatedAt DESC;
+
+getProductById:
+SELECT *
+FROM ProductEntity
+WHERE id = ?;
+
+searchProducts:
+SELECT *
+FROM ProductEntity
+WHERE title LIKE '%' || ? || '%'
+OR description LIKE '%' || ? || '%'
+ORDER BY updatedAt DESC;
+
+getUnsyncedProducts:
+SELECT *
+FROM ProductEntity
+WHERE isSynced = 0;
+
+insertProduct:
+INSERT OR REPLACE INTO ProductEntity(id, title, description, userId, createdAt, updatedAt, isSynced, lastSyncedAt)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+updateProduct:
+UPDATE ProductEntity
+SET title = ?, description = ?, updatedAt = ?, isSynced = ?
+WHERE id = ?;
+
+deleteProduct:
+DELETE FROM ProductEntity
+WHERE id = ?;
+
+markAsSynced:
+UPDATE ProductEntity
+SET isSynced = 1, lastSyncedAt = ?
+WHERE id = ?;
+
+clearAll:
+DELETE FROM ProductEntity;

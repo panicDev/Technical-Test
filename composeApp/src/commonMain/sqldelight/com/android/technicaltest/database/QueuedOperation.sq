@@ -1,0 +1,55 @@
+CREATE TABLE IF NOT EXISTS QueuedOperationEntity (
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    operationType TEXT NOT NULL, -- 'CREATE', 'UPDATE', 'DELETE'
+    productId INTEGER,
+    title TEXT,
+    description TEXT,
+    userId TEXT NOT NULL,
+    createdAt TEXT NOT NULL,
+    retryCount INTEGER NOT NULL DEFAULT 0,
+    lastError TEXT,
+    status TEXT NOT NULL DEFAULT 'PENDING' -- 'PENDING', 'PROCESSING', 'FAILED'
+);
+
+-- Queries
+getAllPendingOperations:
+SELECT *
+FROM QueuedOperationEntity
+WHERE status = 'PENDING'
+ORDER BY createdAt ASC;
+
+getOperationById:
+SELECT *
+FROM QueuedOperationEntity
+WHERE id = ?;
+
+getPendingOperationsCount:
+SELECT COUNT(*)
+FROM QueuedOperationEntity
+WHERE status = 'PENDING';
+
+insertOperation:
+INSERT INTO QueuedOperationEntity(operationType, productId, title, description, userId, createdAt, retryCount, lastError, status)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+updateOperationStatus:
+UPDATE QueuedOperationEntity
+SET status = ?, lastError = ?, retryCount = ?
+WHERE id = ?;
+
+deleteOperation:
+DELETE FROM QueuedOperationEntity
+WHERE id = ?;
+
+deleteOperationsByProductId:
+DELETE FROM QueuedOperationEntity
+WHERE productId = ?;
+
+clearAllOperations:
+DELETE FROM QueuedOperationEntity;
+
+getFailedOperations:
+SELECT *
+FROM QueuedOperationEntity
+WHERE status = 'FAILED'
+ORDER BY createdAt ASC;
