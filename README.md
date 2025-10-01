@@ -8,8 +8,8 @@ This project includes comprehensive documentation to help you get started and un
 
 | Document | Description | Link |
 |----------|-------------|------|
-| 📖 **README.md** | Main documentation (you are here) | [README.md](README.md) |
-| ⚙️ **SETUP_GUIDE.md** | Step-by-step installation and setup guide | [SETUP_GUIDE.md](SETUP_GUIDE.md) |
+| 📖 **README.md** | Main documentation (you are here) | [README.md](docs/README.md) |
+| ⚙️ **SETUP_GUIDE.md** | Step-by-step installation and setup guide | [SETUP_GUIDE.md](docs/SETUP_GUIDE.md) |
 | 🏗️ **ARCHITECTURE.md** | Technical architecture and design patterns | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | 🧪 **TESTING_GUIDE.md** | Comprehensive testing scenarios | [TESTING_GUIDE.md](TESTING_GUIDE.md) |
 | 📋 **PROJECT_SUMMARY.md** | Complete project overview and summary | [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) |
