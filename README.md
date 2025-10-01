@@ -8,21 +8,21 @@ This project includes comprehensive documentation to help you get started and un
 
 | Document | Description | Link |
 |----------|-------------|------|
-| 📖 **README.md** | Main documentation (you are here) | [README.md](docs/README.md) |
+| 📖 **README.md** | Main documentation (you are here) | [README.md](README.md) |
 | ⚙️ **SETUP_GUIDE.md** | Step-by-step installation and setup guide | [SETUP_GUIDE.md](docs/SETUP_GUIDE.md) |
-| 🏗️ **ARCHITECTURE.md** | Technical architecture and design patterns | [ARCHITECTURE.md](ARCHITECTURE.md) |
-| 🧪 **TESTING_GUIDE.md** | Comprehensive testing scenarios | [TESTING_GUIDE.md](TESTING_GUIDE.md) |
-| 📋 **PROJECT_SUMMARY.md** | Complete project overview and summary | [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) |
-| 🔌 **PRODUCTS_API.md** | API endpoint documentation | [PRODUCTS_API.md](PRODUCTS_API.md) |
-| 📝 **CANDIDATE_INSTRUCTIONS.md** | Original project requirements | [CANDIDATE_INSTRUCTIONS.md](CANDIDATE_INSTRUCTIONS.md) |
+| 🏗️ **ARCHITECTURE.md** | Technical architecture and design patterns | [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| 🧪 **TESTING_GUIDE.md** | Comprehensive testing scenarios | [TESTING_GUIDE.md](docs/TESTING_GUIDE.md) |
+| 📋 **PROJECT_SUMMARY.md** | Complete project overview and summary | [PROJECT_SUMMARY.md](docs/PROJECT_SUMMARY.md) |
+| 🔌 **PRODUCTS_API.md** | API endpoint documentation | [PRODUCTS_API.md](docs/PRODUCTS_API.md) |
+| 📝 **CANDIDATE_INSTRUCTIONS.md** | Original project requirements | [CANDIDATE_INSTRUCTIONS.md](docs/CANDIDATE_INSTRUCTIONS.md) |
 
 ### 📖 Quick Navigation
 
-- **New to the project?** Start with [SETUP_GUIDE.md](SETUP_GUIDE.md)
-- **Want to understand the code?** Read [ARCHITECTURE.md](ARCHITECTURE.md)
-- **Ready to test?** Check [TESTING_GUIDE.md](TESTING_GUIDE.md)
-- **Need API details?** See [PRODUCTS_API.md](PRODUCTS_API.md)
-- **Quick overview?** Read [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)
+- **New to the project?** Start with [SETUP_GUIDE.md](docs/SETUP_GUIDE.md)
+- **Want to understand the code?** Read [ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- **Ready to test?** Check [TESTING_GUIDE.md](docs/TESTING_GUIDE.md)
+- **Need API details?** See [PRODUCTS_API.md](docs/PRODUCTS_API.md)
+- **Quick overview?** Read [PROJECT_SUMMARY.md](docs/PROJECT_SUMMARY.md)
 
 ---
 
@@ -463,12 +463,12 @@ For questions or issues:
 
 ### Project Documentation (Internal)
 - [README.md](README.md) - You are here
-- [SETUP_GUIDE.md](SETUP_GUIDE.md) - Installation guide
-- [ARCHITECTURE.md](ARCHITECTURE.md) - Technical documentation
-- [TESTING_GUIDE.md](TESTING_GUIDE.md) - Testing scenarios
-- [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) - Complete overview
-- [PRODUCTS_API.md](PRODUCTS_API.md) - API reference
-- [CANDIDATE_INSTRUCTIONS.md](CANDIDATE_INSTRUCTIONS.md) - Requirements
+- [SETUP_GUIDE.md](docs/SETUP_GUIDE.md) - Installation guide
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md) - Technical documentation
+- [TESTING_GUIDE.md](docs/TESTING_GUIDE.md) - Testing scenarios
+- [PROJECT_SUMMARY.md](docs/PROJECT_SUMMARY.md) - Complete overview
+- [PRODUCTS_API.md](docs/PRODUCTS_API.md) - API reference
+- [CANDIDATE_INSTRUCTIONS.md](docs/CANDIDATE_INSTRUCTIONS.md) - Requirements
 
 ---
 
